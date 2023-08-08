@@ -1,0 +1,22 @@
+/**
+PARALLAX
+===========================
+*/
+
+.parallax {
+  background-image: url("../../images/about.jpg");
+  height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media #{$smartphones-1} {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+  

@@ -1,0 +1,72 @@
+/**
+ROLES AND BENEFITS
+===========================
+*/
+
+.roles-and-benefits-fold {
+  padding: 110px 0 20px 0;
+  @extend %clearfix;
+
+  @media #{$smartphones-1} {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    height: 35px;
+    line-height: 32px;
+    padding: 0 12px;
+    display: inline-block;
+    font-size: $font-large;
+    font-weight: normal;
+    color: $white;
+    border-radius: 4px;
+    font-family: $sans-serif;
+  }
+
+  h4 {
+    line-height: 42px;
+    font-size: $font-big-3;
+    margin: 27px 0 0 0;
+    
+    @media #{$smartphones-1} {
+      line-height: 35px;
+      font-size: $font-big;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: $font-medium-3;
+    line-height: 30px;
+  }
+
+  .columns {
+    margin-bottom: 80px;
+
+    @media #{$smartphones-1} {
+      margin-bottom: 60px;
+    }
+  }
+
+  .community-h {
+    background: $brand-green;
+  }
+
+  .professional-h {
+    background: $brand-red;
+  }
+
+  .contractor-h {
+    background: $brand-blue;
+  }
+
+  img {
+    width: 100%;
+
+    @media #{$smartphones-1} {
+      width: 260px;
+      margin-bottom: 35px;
+    }
+  }
+}

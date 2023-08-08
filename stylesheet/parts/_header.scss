@@ -1,0 +1,132 @@
+/**
+HEADER
+===========================
+*/
+
+header {
+  width: 100%;
+  height: 70px;
+  background: rgba($white, .95);
+  border-bottom: 2px solid rgba($light-gray, .5);
+  box-shadow: 0 1px 1px rgba($medium-gray, .2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  @extend %clearfix;
+  z-index: 200;
+
+  @media #{$smartphones-1} {
+    height: auto !important;
+    position: inherit !important;
+    left: none !important;
+    top: none !important;
+    border-bottom: 2px solid rgba($light-gray, .5) !important;
+  }
+
+  nav {
+    display: block;
+    float: right;
+
+    @media #{$smartphones-1} {
+      padding-bottom: 10px;
+      width: 100%;
+      display: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 23px 0 0 0;
+
+    @media #{$smartphones-1} {
+      margin: 0 0 5px 0 !important;
+    }
+  }
+
+  li {
+    font-size: $font-medium-2;
+    display: inline-block;
+    margin-left: 30px;
+
+    @media #{$smartphones-1} {
+      display: block;
+      margin: 0 0 2px 0;
+    }
+
+    a {
+      text-decoration: none;
+
+      @media #{$smartphones-1} {
+        display: block;
+        height: 36px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  .cta {
+    float: right;
+    margin: 14px 0 0 0; 
+  }
+}
+
+.logo {
+  float: left;
+  margin-top: 10px;
+
+  @media #{$smartphones-1} {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  > a img {
+    width: 150px;
+
+    @media #{$smartphones-1} {
+      width: 100px;
+    }
+  }
+
+}
+
+.home-header {
+  border-top: none;
+  background: none;
+  position: absolute;
+  box-shadow: none;
+  border-bottom: none;
+
+  @media #{$smartphones-1} {
+    height: auto !important;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 43px;
+    display: none;
+  }
+
+  .cta {
+    display: none;
+  }
+}
+
+.header-mobile {
+  width: 100%;
+  display: none;
+
+  @media #{$smartphones-1} {
+    display: block;
+  }
+}
+
+.menu-trigger {
+  display: none; /* Disable mobile menu trigger */
+}

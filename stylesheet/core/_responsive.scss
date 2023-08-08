@@ -1,0 +1,35 @@
+/**
+RESPONSIVE
+===========================
+*/
+
+
+/* Viewports */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@viewport,
+@-ms-viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+
+/* Smartphones */
+
+@media #{$smartphones-1} {
+
+  .menu-trigger {
+    height: 30px;
+    position: absolute;
+    right: 3%;
+    top: 11px;
+    z-index: 200;
+    display: inline-block;
+    cursor: pointer;
+  }
+}

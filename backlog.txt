@@ -1,0 +1,10 @@
+
+
+- About page
+- Languages dropdown
+- Dark mode
+- Testar outras imagens no parallax
+
+- Example data no quadro do token
+- Banner Twitter
+- Configurar Github

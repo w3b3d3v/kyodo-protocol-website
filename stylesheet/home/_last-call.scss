@@ -1,0 +1,23 @@
+/**
+LAST CALL
+===========================
+*/
+
+.last-call-fold {
+  padding: 120px 0 10px 0;
+  text-align: center;
+
+  @media #{$smartphones-1} {
+    padding-top: 65px;
+  }
+  
+  h2 {
+    width: 860px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+}
+

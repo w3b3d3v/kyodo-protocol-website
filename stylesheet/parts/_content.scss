@@ -1,0 +1,77 @@
+/**
+CONTENT
+===========================
+*/
+
+.content {
+
+  .holder {
+    width: 800px;
+    padding: 80px 0;
+    margin: auto;
+
+    @media #{$smartphones-1} {
+      width: 92%;
+    }
+  }
+
+  h1 {
+    margin: 60px 0 0 0;
+
+    @media #{$smartphones-1} {
+      margin-top: -20px;
+      font-size: $font-big-4;
+    }
+  }
+
+  h2 {
+    margin-top: 70px;
+    font-weight: normal;
+
+    @media #{$smartphones-1} {
+      margin-top: 50px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 25px 0 0 50px;
+  }
+
+  li {
+    font-size: $font-large;
+    line-height: 33px;
+    margin: 7px 0 0 0;
+
+    @media #{$smartphones-1} {
+      font-size: $font-medium-2;
+      line-height: 25px;
+    }
+  }
+}
+
+.internals-nav {
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: $font-medium-2;
+    font-weight: bold;
+    color: $medium-gray;
+
+    @media #{$smartphones-1} {
+      font-size: $font-small;
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
