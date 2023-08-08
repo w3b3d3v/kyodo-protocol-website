@@ -1,0 +1,72 @@
+/**
+NUMBERS
+===========================
+*/
+
+.numbers-fold {
+  padding: 0 0 55px 0;
+  @extend %clearfix;
+  text-align: center;
+
+  @media #{$smartphones-1} {
+    padding: 0 0 15px 0;
+    margin-top: -60px;
+  }
+
+  .columns-3 {
+    padding: 90px 0;
+    margin: 0;
+
+    @media #{$smartphones-1} {
+      padding: 60px 0;
+    }
+  }
+
+  .item {
+    width: 30%;
+
+    @media #{$smartphones-1} {
+      width: 100%;
+      margin: 40px 0 0 0;
+    }
+
+    img {
+      height: 250px;
+
+      @media #{$tablets} {
+        height: 200px;
+      }
+    }
+
+    h3 {
+      margin: -95px 0 0 0;
+      font-size: $font-big-2;
+
+      @media #{$tablets} {
+        margin: -80px 0 0 0;
+      }
+    }
+
+    p {
+      font-size: $font-large;
+      margin: 0;
+      color: $medium-blue;
+
+      strong {
+        color: $dark-blue;
+      }
+    }
+
+    a {
+      margin-top: 5px;
+      display: inline-block;
+    }
+  }
+
+  li:first-child {
+
+    @media #{$smartphones-1} {
+      margin-top: 0;
+    }
+  }
+}

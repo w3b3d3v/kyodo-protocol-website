@@ -1,0 +1,62 @@
+/**
+HOW IT WORKS
+===========================
+*/
+
+.how-it-works-fold {
+  padding: 0 0 70px 0;
+
+  @media #{$smartphones-1} {
+    padding: 0 0 30px 0;
+  }
+
+  .columns {
+    align-items: normal;
+  }
+  
+  h3 {
+    font-size: $font-large;
+    color: $medium-blue;
+    margin: 7px 0 25px 0;
+    font-family: $sans-serif;
+  }
+
+  h4 {
+
+    @media #{$smartphones-1} {
+      margin-bottom: 30px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    @media #{$smartphones-1} {
+      font-size: $font-medium !important;
+      line-height: 22px !important;
+    }
+  }
+
+  .how-icon {
+    width: 170px;
+    text-align: center;
+    float: right;
+
+    @media #{$smartphones-1} {
+      width: 40%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .how-text {
+    margin-right: 200px;
+
+    @media #{$smartphones-1} {
+      margin-right: 38%;
+    }
+  }
+}
+
