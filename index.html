@@ -565,9 +565,19 @@
 
     var email = e.target[0].value // Get the email value
 
-    // Save the email to Firebase
-    saveEmailToFirebase(email)
+    if (isValidEmail(email)) {
+      // Save the email to Firebase
+      saveEmailToFirebase(email)
+    } else {
+      alert("Please enter a valid email address.")
+    }
   })
+
+  function isValidEmail(email) {
+    // Regular expression pattern for validating an email
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return pattern.test(email)
+  }
 
   function saveEmailToFirebase(email) {
     var database = firebase.database()
