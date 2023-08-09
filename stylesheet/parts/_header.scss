@@ -70,9 +70,21 @@ header {
 
   .cta {
     float: right;
-    margin: 14px 0 0 0; 
+    margin: 14px 0 0 0;
   }
 }
+
+.darkmode-skin {
+
+  header {
+
+    .cta label {
+      background-color: $white;
+      color: $medium-blue;
+    }
+  }
+}
+
 
 .logo {
   float: left;

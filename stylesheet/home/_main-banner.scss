@@ -12,7 +12,6 @@ MAIN BANNER
   box-sizing: border-box;
   @extend %clearfix;
   min-height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -32,10 +31,9 @@ MAIN BANNER
 
   .holder {
     z-index: 100;
-    position: relative;
   }
 
-  .logo-banner a img {
+  .logo-banner img {
     width: 190px;
     margin-bottom: 40px;
   }
@@ -47,6 +45,13 @@ MAIN BANNER
     @media only screen and (max-width: 800px) {
       width: 100%;
     }
+  }
+}
+
+.darkmode-skin {
+
+  .main-banner {
+    background-color: $dark-gray;
   }
 }
 
@@ -86,5 +91,9 @@ MAIN BANNER
       display: inline;
     }
   }
+}
+
+.logo-white {
+  display: none;
 }
 

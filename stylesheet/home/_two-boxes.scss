@@ -19,6 +19,13 @@ DAO and Token
   }
 }
 
+.darkmode-skin {
+
+  .two-boxes-fold {
+    background: $dark-gray-2;
+  }
+}
+
 
 /* DAO */
 
@@ -38,7 +45,6 @@ DAO and Token
 /* Token */
 
 .token-fold {
-  background: rgb(243,246,249);
   background: linear-gradient(180deg, rgba(243,246,249,1) 0%, rgba(255,255,255,1) 100%);
   padding: 65px 40px 40px 40px;
   border-radius: 12px;
@@ -47,6 +53,13 @@ DAO and Token
 
   @media #{$smartphones-1} {
     margin-top: 65px;
+  }
+}
+
+.darkmode-skin {
+
+  .token-fold {
+    background: $dark-gray;
   }
 }
 
@@ -66,6 +79,14 @@ DAO and Token
   top: 0;
 }
 
+.darkmode-skin {
+
+  .example {
+    background: rgba($white, .2);
+    border-bottom: none;
+  }
+}
+
 .token-price {
   margin: 12px 0 21px 0;
   font-size: 40px;
@@ -78,6 +99,7 @@ DAO and Token
   .bar {
     height: 5px;
     background-color: #E5E9ED;
+    border-radius: 2px;
   }
 
   ul {
@@ -109,6 +131,22 @@ DAO and Token
   }
 }
 
+.darkmode-skin {
+
+  .price-bar {
+
+    .bar {
+      background: rgba($white, .2);
+    }
+  
+    li,
+    li:first-child,
+    li:last-child {
+      color: $white;
+    }
+  }
+}
+
 .token-infos {
   font-size: $font-medium;
   padding: 0;
@@ -130,5 +168,15 @@ DAO and Token
     text-align: right;
     font-weight: bold;
     font-family: $headings;
+  }
+}
+
+.darkmode-skin {
+
+  .token-infos {
+
+    li {
+      color: $white !important;
+    }
   }
 }
