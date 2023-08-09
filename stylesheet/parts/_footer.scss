@@ -67,6 +67,16 @@ footer {
     font-size: $font-medium-2;
     font-weight: normal;
   }
+
+  .columns {
+
+    @media #{$smartphones-1} {
+      
+      > div {
+        margin-top: 60px;
+      }
+    }
+  }
 }
 
 .web3dev {
