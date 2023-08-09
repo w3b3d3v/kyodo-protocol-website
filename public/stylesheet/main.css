@@ -544,12 +544,28 @@ DAO and Token
 .token-fold {
   background: #f3f6f9;
   background: linear-gradient(180deg, #f3f6f9 0%, white 100%);
-  padding: 40px;
+  padding: 65px 40px 40px 40px;
   border-radius: 12px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
   @media only screen and (max-width: 800px) {
     .token-fold {
       margin-top: 65px; } }
+
+.example {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #C99F87;
+  background: #fff;
+  padding: 7px;
+  text-align: center;
+  border-bottom: 1px solid #E6EDF1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0; }
 
 .token-price {
   margin: 12px 0 21px 0;
