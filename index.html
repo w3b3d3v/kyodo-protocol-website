@@ -539,87 +539,95 @@
 
     <input type="checkbox" id="modal">
     <label for="modal" class="modal-background tracking-in-expand"></label>
+
     <div class="modal text-focus-in">
+
       <label for="modal" class="close">
         <img src="./images/close.svg" alt="Close">
       </label>
+
       <div class="form">
+
         <h2 class="heading-call">
           Join waitlist
         </h2>
+
         <p>
           Enter your e-mail address in the field below
         </p>
+
         <form id="waitlistForm">
           <input type="email" placeholder="Your e-mail">
           <button type="submit" id="submitBtn">Join now</button>
         </form>
-<script>
-  // Initialize Firebase
-  var firebaseConfig = {
-    apiKey: "AIzaSyD1sX-mckM0NDtJgyOkT5J8RLHbIOkWGq4",
-    authDomain: "kyodo-protocol-website.firebaseapp.com",
-    projectId: "kyodo-protocol-website",
-    storageBucket: "kyodo-protocol-website.appspot.com",
-    messagingSenderId: "306749329778",
-    appId: "1:306749329778:web:979b5a3426fbca72ba4deb",
-    measurementId: "G-XWH1M1SMFD"
-  }
 
-  firebase.initializeApp(firebaseConfig)
+        <script>
+          // Initialize Firebase
+          var firebaseConfig = {
+            apiKey: "AIzaSyD1sX-mckM0NDtJgyOkT5J8RLHbIOkWGq4",
+            authDomain: "kyodo-protocol-website.firebaseapp.com",
+            projectId: "kyodo-protocol-website",
+            storageBucket: "kyodo-protocol-website.appspot.com",
+            messagingSenderId: "306749329778",
+            appId: "1:306749329778:web:979b5a3426fbca72ba4deb",
+            measurementId: "G-XWH1M1SMFD"
+          }
 
-  document.getElementById('waitlistForm').addEventListener('submit', function (e) {
-    e.preventDefault() // Prevent the default form submission
+          firebase.initializeApp(firebaseConfig)
 
-    var email = e.target[0].value // Get the email value
+          document.getElementById('waitlistForm').addEventListener('submit', function (e) {
+            e.preventDefault() // Prevent the default form submission
 
-    if (isValidEmail(email)) {
-      // Save the email to Firebase
-      saveEmailToFirebase(email)
-    } else {
-      alert("Please enter a valid email address.")
-    }
-  })
+            var email = e.target[0].value // Get the email value
 
-  function isValidEmail(email) {
-    // Regular expression pattern for validating an email
-    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return pattern.test(email)
-  }
+            if (isValidEmail(email)) {
+              // Save the email to Firebase
+              saveEmailToFirebase(email)
+            } else {
+              alert("Please enter a valid email address.")
+            }
+          })
 
-  function saveEmailToFirebase(email) {
-    var database = firebase.database()
-    var ref = database.ref('waitlist') // 'waitlist' is the name of the node where you want to save the emails
+          function isValidEmail(email) {
+            // Regular expression pattern for validating an email
+            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            return pattern.test(email)
+          }
 
-    // Push the email to the 'waitlist' node
-    ref.push(email, function (error) {
-      if (error) {
-        console.error("Data could not be saved. " + error)
-      } else {
-        console.log("Data saved successfully.")
-        showSuccessMessage()
-        hideForm()
-      }
-    })
-  }
+          function saveEmailToFirebase(email) {
+            var database = firebase.database()
+            var ref = database.ref('waitlist') // 'waitlist' is the name of the node where you want to save the emails
 
-  function showSuccessMessage() {
-    var successMessage = document.createElement('p')
-    successMessage.textContent = "Thank you for joining the waitlist!"
-    successMessage.style.color = "green"
-    successMessage.style.fontSize = "18px"
-    successMessage.style.fontWeight = "bold"
-    document.querySelector('.form').appendChild(successMessage)
-  }
+            // Push the email to the 'waitlist' node
+            ref.push(email, function (error) {
+              if (error) {
+                console.error("Data could not be saved. " + error)
+              } else {
+                console.log("Data saved successfully.")
+                showSuccessMessage()
+                hideForm()
+              }
+            })
+          }
 
-  function hideForm() {
-    document.getElementById('waitlistForm').style.display = 'none'
-  }
+          function showSuccessMessage() {
+            var successMessage = document.createElement('p')
+            successMessage.textContent = "Thank you for joining the waitlist!"
+            successMessage.style.color = "green"
+            successMessage.style.fontSize = "18px"
+            successMessage.style.fontWeight = "bold"
+            document.querySelector('.form').appendChild(successMessage)
+          }
 
-</script>
+          function hideForm() {
+            document.getElementById('waitlistForm').style.display = 'none'
+          }
 
-      </div>
-    </div>
+        </script>
+
+      </div> <!-- form -->
+
+    </div> <!-- modal -->
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./js/jquery.flexslider.js"></script>
