@@ -41,6 +41,10 @@
         "url" : "https://www.kyodoprotocol.xyz/"
       }
     </script>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
 
   </head>
 
@@ -466,7 +470,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank">
+                  <a href="https://twitter.com/KyodoProtocol" target="_blank">
                     <img src="./images/twitter-icon.svg" alt="Twitter">
                   </a>
                 </li>
@@ -514,7 +518,7 @@
 
       <section class="footer-bottom">
         <div class="holder">
-          <p><strong>&copy; 2023 Kyōdō DAO</p>
+          <p><strong>&copy; 2023 WEB3DEV</p>
           <ul>
             <li><a href="code-of-conduct.html">Code of conduct</a></li>
             <li><a href="privacy-policy.html">Privacy policy</a></li>
@@ -538,10 +542,64 @@
         <p>
           Enter your e-mail address in the field below
         </p>
-        <form>
+        <form id="waitlistForm">
           <input type="email" placeholder="Your e-mail">
-          <button>Join now</button>
+          <button type="submit" id="submitBtn">Join now</button>
         </form>
+<script>
+  // Initialize Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyD1sX-mckM0NDtJgyOkT5J8RLHbIOkWGq4",
+    authDomain: "kyodo-protocol-website.firebaseapp.com",
+    projectId: "kyodo-protocol-website",
+    storageBucket: "kyodo-protocol-website.appspot.com",
+    messagingSenderId: "306749329778",
+    appId: "1:306749329778:web:979b5a3426fbca72ba4deb",
+    measurementId: "G-XWH1M1SMFD"
+  }
+
+  firebase.initializeApp(firebaseConfig)
+
+  document.getElementById('waitlistForm').addEventListener('submit', function (e) {
+    e.preventDefault() // Prevent the default form submission
+
+    var email = e.target[0].value // Get the email value
+
+    // Save the email to Firebase
+    saveEmailToFirebase(email)
+  })
+
+  function saveEmailToFirebase(email) {
+    var database = firebase.database()
+    var ref = database.ref('waitlist') // 'waitlist' is the name of the node where you want to save the emails
+
+    // Push the email to the 'waitlist' node
+    ref.push(email, function (error) {
+      if (error) {
+        console.error("Data could not be saved. " + error)
+      } else {
+        console.log("Data saved successfully.")
+        showSuccessMessage()
+        hideForm()
+      }
+    })
+  }
+
+  function showSuccessMessage() {
+    var successMessage = document.createElement('p')
+    successMessage.textContent = "Thank you for joining the waitlist!"
+    successMessage.style.color = "green"
+    successMessage.style.fontSize = "18px"
+    successMessage.style.fontWeight = "bold"
+    document.querySelector('.form').appendChild(successMessage)
+  }
+
+  function hideForm() {
+    document.getElementById('waitlistForm').style.display = 'none'
+  }
+
+</script>
+
       </div>
     </div>
 
