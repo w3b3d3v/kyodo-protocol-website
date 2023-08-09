@@ -40,13 +40,30 @@ DAO and Token
 .token-fold {
   background: rgb(243,246,249);
   background: linear-gradient(180deg, rgba(243,246,249,1) 0%, rgba(255,255,255,1) 100%);
-  padding: 40px;
+  padding: 65px 40px 40px 40px;
   border-radius: 12px;
   box-sizing: border-box;
+  position: relative;
 
   @media #{$smartphones-1} {
     margin-top: 65px;
   }
+}
+
+.example {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  font-size: $font-medium;
+  font-weight: bold;
+  color: #C99F87;
+  background: $white;
+  padding: 7px;
+  text-align: center;
+  border-bottom: 1px solid $light-gray;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .token-price {
