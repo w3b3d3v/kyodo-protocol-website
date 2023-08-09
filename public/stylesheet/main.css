@@ -353,7 +353,7 @@ MAIN BANNER
   display: flex;
   align-items: center;
   flex-direction: row; }
-  @media only screen and (max-height: 769px) {
+  @media only screen and (max-width: 800px) {
     .main-banner {
       display: block;
       padding-top: 50px;
