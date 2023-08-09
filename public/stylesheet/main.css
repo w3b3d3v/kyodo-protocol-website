@@ -254,6 +254,9 @@ footer {
 .footer-nav a {
   font-size: 15px;
   font-weight: normal; }
+@media only screen and (max-width: 800px) {
+  .footer-nav .columns > div {
+    margin-top: 60px; } }
 
 .web3dev {
   text-align: center; }
