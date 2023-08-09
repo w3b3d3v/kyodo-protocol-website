@@ -20,6 +20,13 @@ footer {
   }
 }
 
+.darkmode-skin {
+
+  footer {
+    background: $dark-gray-2;
+  }
+}
+
 
 /* Top */
 
@@ -155,6 +162,16 @@ footer {
 
   a {
     font-weight: normal;
+  }
+}
+
+.darkmode-skin {
+
+  .footer-bottom {
+
+    .holder {
+      border-top: 1px solid rgba($white, .2);
+    }
   }
 }
 

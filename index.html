@@ -58,6 +58,14 @@
   </script>
   <body>
 
+    <ul class="config-nav">
+      <li class="darkmode-trigger">
+        <a href="#">
+          <img src="./images/darkmode-icon.svg" alt="Dark mode">
+        </a>
+      </li>
+    </ul>
+
     <header id="js-header" class="home-header">
       <div class="holder">
         <h1 class="logo text-focus-in">
@@ -77,9 +85,8 @@
       <div class="holder">
 
         <div class="logo-banner text-focus-in">
-          <a href="/">
-            <img src="./images/logo.svg" alt="Kyōdō Protocol">
-          </a>
+          <img src="./images/logo.svg" alt="Kyōdō Protocol" class="logo-black">
+          <img src="./images/logo-white.svg" alt="Kyōdō Protocol" class="logo-white">
         </div>
 
         <h1 data-aos="fade-in">
@@ -269,7 +276,8 @@
         <div class="columns">
 
           <div class="image-col" data-aos="fade-right">
-            <img src="./images/community-art.svg" alt="Illustration representing the Community members">
+            <img src="./images/persons/light/community-art.svg" alt="Community" class="community-light">
+            <img src="./images/persons/dark/community-art.svg" alt="Community" class="community-dark">
           </div>
 
           <div>
@@ -289,7 +297,8 @@
         <div class="columns invert-cols">
 
           <div class="image-col" data-aos="fade-left">
-            <img src="./images/professional-art.svg" alt="Illustration representing a Professional">
+            <img src="./images/persons/light/professional-art.svg" alt="Professional" class="professional-light">
+            <img src="./images/persons/dark/professional-art.svg" alt="Professional" class="professional-dark">
           </div>
 
           <div>
@@ -309,7 +318,8 @@
         <div class="columns">
 
           <div class="image-col" data-aos="fade-right">
-            <img src="./images/contractor-art.svg" alt="Illustration representing a Contractor">
+            <img src="./images/persons/light/contractor-art.svg" alt="Contractor" class="contractor-light">
+            <img src="./images/persons/dark/contractor-art.svg" alt="Contractor" class="contractor-dark">
           </div>
 
           <div>
@@ -472,8 +482,10 @@
 
             <div>
               <div class="logo-footer" data-aos="zoom-right">
-                <img src="./images/logo.svg" alt="Kyōdō Protocol">
+                <img src="./images/logo.svg" alt="Kyōdō Protocol" class="logo-black">
+                <img src="./images/logo-white.svg" alt="Kyōdō Protocol" class="logo-white">
               </div>
+
               <ul class="social-list">
                 <li>
                   <a href="/">

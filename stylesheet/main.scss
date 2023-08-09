@@ -5,6 +5,7 @@
 
 // General
 @import "parts/header";
+@import "parts/config-nav";
 @import "parts/footer";
 
 // Home
@@ -48,9 +49,21 @@ body {
   color: $dark-blue;
 }
 
+.darkmode-skin {
+  background-color: $dark-gray;
+  color: $white;
+}
+
 a {
   color: $medium-blue;
   font-weight: bold;
+}
+
+.darkmode-skin {
+
+  a {
+    color: $medium-gray;
+  }
 }
 
 p,
@@ -121,12 +134,31 @@ h2.default-heading {
   }
 }
 
+.darkmode-skin {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: $white !important;
+  }
+}
+
 
 /* Home gradient */
 
 .home-gradient {
   background: rgb(243,246,249);
   background: linear-gradient(30deg, rgba(243,246,249,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.darkmode-skin {
+
+  .home-gradient {
+    background: $dark-gray-2;
+  }
 }
 
 
@@ -159,6 +191,18 @@ h2.default-heading {
     opacity: .8;
   }
 }
+
+.darkmode-skin {
+
+  .cta {
+    
+    label {
+      background: $dark-gray;
+      color: $white;
+    }
+  }
+}
+
 
 
 /* Read more */

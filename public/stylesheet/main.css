@@ -168,6 +168,10 @@ header {
     float: right;
     margin: 14px 0 0 0; }
 
+.darkmode-skin header .cta label {
+  background-color: #fff;
+  color: #2B526B; }
+
 .logo {
   float: left;
   margin-top: 10px; }
@@ -210,6 +214,23 @@ header {
   /* Disable mobile menu trigger */ }
 
 /**
+CONFIG NAV
+===========================
+*/
+.config-nav {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  z-index: 9999; }
+  .config-nav li {
+    display: inline-block;
+    margin-left: 20px; }
+  .config-nav img {
+    height: 20px; }
+
+/**
 FOOTER
 ===========================
 */
@@ -223,6 +244,9 @@ footer {
   @media only screen and (max-width: 800px) {
     footer {
       text-align: center; } }
+
+.darkmode-skin footer {
+  background: #111; }
 
 /* Top */
 .footer-top {
@@ -311,6 +335,9 @@ footer {
   .footer-bottom a {
     font-weight: normal; }
 
+.darkmode-skin .footer-bottom .holder {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
 /**
 MAIN BANNER
 ===========================
@@ -323,7 +350,6 @@ MAIN BANNER
   color: #fff;
   box-sizing: border-box;
   min-height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: row; }
@@ -339,9 +365,8 @@ MAIN BANNER
     .main-banner {
       padding-bottom: 60px; } }
   .main-banner .holder {
-    z-index: 100;
-    position: relative; }
-  .main-banner .logo-banner a img {
+    z-index: 100; }
+  .main-banner .logo-banner img {
     width: 190px;
     margin-bottom: 40px; }
   .main-banner h1,
@@ -351,6 +376,9 @@ MAIN BANNER
       .main-banner h1,
       .main-banner p {
         width: 100%; } }
+
+.darkmode-skin .main-banner {
+  background-color: #090909; }
 
 /* Docs link */
 .docs-btn {
@@ -377,6 +405,9 @@ MAIN BANNER
     @media only screen and (max-width: 800px) {
       .docs-btn em {
         display: inline; } }
+
+.logo-white {
+  display: none; }
 
 /**
 BIG DESCRIPTION
@@ -438,6 +469,9 @@ HOW IT WORKS
       .how-it-works-fold .how-text {
         margin-right: 38%; } }
 
+.darkmode-skin .how-it-works-fold h3 {
+  color: #85A8BE !important; }
+
 /**
 ROLES AND BENEFITS
 ===========================
@@ -488,6 +522,11 @@ ROLES AND BENEFITS
         width: 260px;
         margin-bottom: 35px; } }
 
+.community-dark,
+.professional-dark,
+.contractor-dark {
+  display: none; }
+
 /**
 PARALLAX
 ===========================
@@ -536,6 +575,9 @@ DAO and Token
     font-size: 27px;
     color: #2B526B; }
 
+.darkmode-skin .two-boxes-fold {
+  background: #111; }
+
 /* DAO */
 .dao-fold img {
   width: 90px;
@@ -545,7 +587,6 @@ DAO and Token
 
 /* Token */
 .token-fold {
-  background: #f3f6f9;
   background: linear-gradient(180deg, #f3f6f9 0%, white 100%);
   padding: 65px 40px 40px 40px;
   border-radius: 12px;
@@ -554,6 +595,9 @@ DAO and Token
   @media only screen and (max-width: 800px) {
     .token-fold {
       margin-top: 65px; } }
+
+.darkmode-skin .token-fold {
+  background: #090909; }
 
 .example {
   border-top-right-radius: 12px;
@@ -570,6 +614,10 @@ DAO and Token
   right: 0;
   top: 0; }
 
+.darkmode-skin .example {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: none; }
+
 .token-price {
   margin: 12px 0 21px 0;
   font-size: 40px;
@@ -578,7 +626,8 @@ DAO and Token
 
 .price-bar .bar {
   height: 5px;
-  background-color: #E5E9ED; }
+  background-color: #E5E9ED;
+  border-radius: 2px; }
 .price-bar ul {
   padding: 0;
   margin: 7px 0 0 0;
@@ -600,6 +649,13 @@ DAO and Token
   text-align: right;
   color: #060A0F; }
 
+.darkmode-skin .price-bar .bar {
+  background: rgba(255, 255, 255, 0.2); }
+.darkmode-skin .price-bar li,
+.darkmode-skin .price-bar li:first-child,
+.darkmode-skin .price-bar li:last-child {
+  color: #fff; }
+
 .token-infos {
   font-size: 13px;
   padding: 0;
@@ -616,6 +672,9 @@ DAO and Token
     text-align: right;
     font-weight: bold;
     font-family: "Geologica", Arial, Helvetica, sans-serif; }
+
+.darkmode-skin .token-infos li {
+  color: #fff !important; }
 
 /**
 LAST CALL
@@ -680,6 +739,9 @@ NUMBERS
   @media only screen and (max-width: 800px) {
     .numbers-fold li:first-child {
       margin-top: 0; } }
+
+.darkmode-skin .numbers-fold .item p strong {
+  color: #fff; }
 
 /**
 MODAL
@@ -858,9 +920,16 @@ body {
   margin: 0;
   color: #060A0F; }
 
+.darkmode-skin {
+  background-color: #090909;
+  color: #fff; }
+
 a {
   color: #2B526B;
   font-weight: bold; }
+
+.darkmode-skin a {
+  color: #85A8BE; }
 
 p,
 li,
@@ -918,10 +987,21 @@ h2.default-heading {
       line-height: 35px;
       font-size: 25px; } }
 
+.darkmode-skin h1,
+.darkmode-skin h2,
+.darkmode-skin h3,
+.darkmode-skin h4,
+.darkmode-skin h5,
+.darkmode-skin p {
+  color: #fff !important; }
+
 /* Home gradient */
 .home-gradient {
   background: #f3f6f9;
   background: linear-gradient(30deg, #f3f6f9 0%, white 100%); }
+
+.darkmode-skin .home-gradient {
+  background: #111; }
 
 /* CTA */
 .cta {
@@ -946,6 +1026,10 @@ h2.default-heading {
     cursor: pointer; }
   .cta label:hover {
     opacity: .8; }
+
+.darkmode-skin .cta label {
+  background: #090909;
+  color: #fff; }
 
 /* Read more */
 .read-more {
