@@ -532,7 +532,7 @@ PARALLAX
 ===========================
 */
 .parallax {
-  background-image: url("../../images/about.jpg");
+  background-image: url("../../images/parallax-02.jpg");
   height: 550px;
   background-attachment: fixed;
   background-position: center;
