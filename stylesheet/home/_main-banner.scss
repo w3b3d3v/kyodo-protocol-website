@@ -19,10 +19,8 @@ MAIN BANNER
   @media #{$smartphones-1} {
     display: block;
     padding-top: 50px;
-    background: $white url("../../images/banner-mobile.svg");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    border-bottom: 1px solid $light-gray;
+    background-size: 100%;
   }
 
   @media #{$smartphones-1} {
@@ -36,6 +34,10 @@ MAIN BANNER
   .logo-banner img {
     width: 190px;
     margin-bottom: 40px;
+
+    @media #{$smartphones-1} {
+      margin-bottom: 100px;
+    }
   }
 
   h1,
