@@ -358,7 +358,8 @@ MAIN BANNER
       display: block;
       padding-top: 50px;
       border-bottom: 1px solid #E6EDF1;
-      background-size: 100%; } }
+      background-size: 100%;
+      background: none; } }
   @media only screen and (max-width: 800px) {
     .main-banner {
       padding-bottom: 60px; } }
@@ -367,9 +368,6 @@ MAIN BANNER
   .main-banner .logo-banner img {
     width: 190px;
     margin-bottom: 40px; }
-    @media only screen and (max-width: 800px) {
-      .main-banner .logo-banner img {
-        margin-bottom: 100px; } }
   .main-banner h1,
   .main-banner p {
     width: 580px; }
