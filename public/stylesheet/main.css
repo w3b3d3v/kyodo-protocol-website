@@ -785,7 +785,7 @@ input[type="checkbox"]:checked ~ .modal-background {
         width: 80%;
         padding: 70px 0; } }
   .modal h2 {
-    margin: 0; }
+    margin: 0 0 20px 0; }
   .modal p {
     font-size: 15px;
     line-height: 35px;
@@ -803,6 +803,10 @@ input[type="checkbox"]:checked ~ .modal-background {
     border-bottom: 3px solid #85A8BE;
     color: #060A0F;
     margin: 0; }
+  .modal .select-field {
+    padding-top: 50px; }
+    .modal .select-field label {
+      margin-bottom: -40px; }
   .modal select {
     background: none;
     width: 100%;
@@ -814,8 +818,6 @@ input[type="checkbox"]:checked ~ .modal-background {
     border: none;
     border-bottom: 3px solid #85A8BE;
     color: #060A0F;
-    margin: 20px 0;
-    /* Add some margin for spacing */
     appearance: none;
     /* Remove default appearance */
     -webkit-appearance: none;

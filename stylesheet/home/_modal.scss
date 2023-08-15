@@ -47,7 +47,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   }
 
   h2 {
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 
   p {
@@ -71,6 +71,14 @@ input[type="checkbox"]:checked ~ .modal-background {
     margin: 0;
   }
 
+  .select-field {
+    padding-top: 50px;
+
+    label {
+      margin-bottom: -40px;
+    }
+  }
+
   select {
     background: none;
     width: 100%;
@@ -82,7 +90,6 @@ input[type="checkbox"]:checked ~ .modal-background {
     border: none;
     border-bottom: 3px solid $medium-gray;
     color: $dark-blue;
-    margin: 20px 0; /* Add some margin for spacing */
     appearance: none; /* Remove default appearance */
     -webkit-appearance: none; /* Remove default appearance for Chrome and Safari */
     -moz-appearance: none; /* Remove default appearance for Firefox */
