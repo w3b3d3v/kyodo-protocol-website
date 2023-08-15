@@ -592,76 +592,19 @@
 
         <form id="waitlistForm">
           <input type="email" placeholder="Your e-mail">
+          <br><br>
+          <label for="interestReason">Why are you interested?</label>
+          <select id="interestReason" name="interestReason">
+            <option value=""></option>
+            <option value="community_leader">Community Leader: I want to implement the Protocol in my community</option>
+            <option value="professional">Professional: I want to use the Protocol to provide services</option>
+            <option value="business">Business: I want to hire talents from communities</option>
+          </select>
           <button type="submit" id="submitBtn">Join now</button>
         </form>
-
-        <script>
-          // Initialize Firebase
-          var firebaseConfig = {
-            apiKey: "AIzaSyD1sX-mckM0NDtJgyOkT5J8RLHbIOkWGq4",
-            authDomain: "kyodo-protocol-website.firebaseapp.com",
-            projectId: "kyodo-protocol-website",
-            storageBucket: "kyodo-protocol-website.appspot.com",
-            messagingSenderId: "306749329778",
-            appId: "1:306749329778:web:979b5a3426fbca72ba4deb",
-            measurementId: "G-XWH1M1SMFD"
-          }
-
-          firebase.initializeApp(firebaseConfig)
-
-          document.getElementById('waitlistForm').addEventListener('submit', function (e) {
-            e.preventDefault() // Prevent the default form submission
-
-            var email = e.target[0].value // Get the email value
-
-            if (isValidEmail(email)) {
-              // Save the email to Firebase
-              saveEmailToFirebase(email)
-            } else {
-              alert("Please enter a valid email address.")
-            }
-          })
-
-          function isValidEmail(email) {
-            // Regular expression pattern for validating an email
-            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-            return pattern.test(email)
-          }
-
-          function saveEmailToFirebase(email) {
-            var database = firebase.database()
-            var ref = database.ref('waitlist') // 'waitlist' is the name of the node where you want to save the emails
-
-            // Push the email to the 'waitlist' node
-            ref.push(email, function (error) {
-              if (error) {
-                console.error("Data could not be saved. " + error)
-              } else {
-                console.log("Data saved successfully.")
-                showSuccessMessage()
-                hideForm()
-              }
-            })
-          }
-
-          function showSuccessMessage() {
-            var successMessage = document.createElement('p')
-            successMessage.textContent = "Thank you for joining the waitlist!"
-            successMessage.style.color = "green"
-            successMessage.style.fontSize = "18px"
-            successMessage.style.fontWeight = "bold"
-            document.querySelector('.form').appendChild(successMessage)
-          }
-
-          function hideForm() {
-            document.getElementById('waitlistForm').style.display = 'none'
-          }
-
-        </script>
-
-      </div> <!-- form -->
-
-    </div> <!-- modal -->
+        <script src="./js/form.js"></script>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./js/jquery.flexslider.js"></script>
