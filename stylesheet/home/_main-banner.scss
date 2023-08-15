@@ -19,9 +19,11 @@ MAIN BANNER
   @media #{$smartphones-1} {
     display: block;
     padding-top: 50px;
+    padding-bottom: 50px;
     border-bottom: 1px solid $light-gray;
     background-size: 100%;
     background: none;
+    min-height: auto;
   }
 
   @media #{$smartphones-1} {
