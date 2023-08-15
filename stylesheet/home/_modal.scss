@@ -20,7 +20,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   top: 0;
   left: 0;
   display: none;
-  z-index: 400;
+  z-index: 8000;
 }
 
 .modal {
@@ -32,7 +32,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   margin: auto;
   display: none;	
   box-sizing: border-box;
-  z-index: 600;
+  z-index: 9999;
 
   .form {
     width: 350px;
