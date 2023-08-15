@@ -223,7 +223,7 @@ CONFIG NAV
   position: absolute;
   top: 12px;
   right: 20px;
-  z-index: 9999; }
+  z-index: 500; }
   .config-nav li {
     display: inline-block;
     margin-left: 20px; }
@@ -761,7 +761,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   top: 0;
   left: 0;
   display: none;
-  z-index: 400; }
+  z-index: 8000; }
 
 .modal {
   position: fixed;
@@ -772,7 +772,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   margin: auto;
   display: none;
   box-sizing: border-box;
-  z-index: 600; }
+  z-index: 9999; }
   .modal .form {
     width: 350px;
     padding: 100px 0;
