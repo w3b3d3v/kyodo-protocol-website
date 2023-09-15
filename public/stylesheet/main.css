@@ -424,8 +424,8 @@ BIG DESCRIPTION
       text-align: left; } }
   .big-description-fold p {
     width: 95%;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 21px;
+    line-height: 36px;
     margin: 0 auto; }
     @media only screen and (max-width: 1100px) {
       .big-description-fold p {
