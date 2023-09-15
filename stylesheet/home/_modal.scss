@@ -37,7 +37,6 @@ input[type="checkbox"]:checked ~ .modal-background {
   .form {
     width: 550px;
     padding: 100px 0;
-    text-align: center;
     margin: auto;
 
     @media #{$smartphones-1} {
@@ -57,20 +56,11 @@ input[type="checkbox"]:checked ~ .modal-background {
     margin: 0 0 30px 0;
   }
 
-  input[type="email"] {
-    background: none;
-    width: 100%;
-    padding: 15px 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: $sans-serif;
-    font-size: $font-large;
-    border: none;
-    border-bottom: 3px solid $medium-gray;
-    color: $dark-blue;
-    margin: 0;
+  .form-label {
+    font-weight: bold;
   }
 
+  input[type="email"],
   select {
     background: none;
     width: 100%;
@@ -82,19 +72,11 @@ input[type="checkbox"]:checked ~ .modal-background {
     border: none;
     border-bottom: 3px solid $medium-gray;
     color: $dark-blue;
-    margin: 20px 0; /* Add some margin for spacing */
-    appearance: none; /* Remove default appearance */
-    -webkit-appearance: none; /* Remove default appearance for Chrome and Safari */
-    -moz-appearance: none; /* Remove default appearance for Firefox */
-    background-image: url('data:image/svg+xml;utf8,<svg fill="darkblue" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Add a custom dropdown arrow */
-    background-repeat: no-repeat;
-    background-position: right 5px center; /* Position the arrow on the right */
-    background-size: 20px; /* Size of the arrow */
+    margin: 0 0 50px 0;
   }
 
   button {
-    width: 100%;
-    padding: 12px 0 15px 0;
+    padding: 12px 20px 15px 20px;
     box-sizing: border-box;
     outline: none;
     font-family: $sans-serif;
@@ -104,7 +86,7 @@ input[type="checkbox"]:checked ~ .modal-background {
     font-weight: bold;
     border-radius: 50px;
     color: $white;
-    margin: 30px 0 0 0;
+    margin: 00;
     cursor: pointer;
 
     &:hover {
