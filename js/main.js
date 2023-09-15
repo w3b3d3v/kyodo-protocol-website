@@ -6,14 +6,7 @@ Index = {
 
     $(".darkmode-trigger").click(function(e) {
       $("body").toggleClass("darkmode-skin");
-      $(".community-light").toggle();
-      $(".community-dark").toggle();
-      $(".professional-light").toggle();
-      $(".professional-dark").toggle();
-      $(".contractor-light").toggle();
-      $(".contractor-dark").toggle();
-      $(".logo-black").toggle();
-      $(".logo-white").toggle();
+      $(".community-light, .community-dark, .professional-light, .professional-dark, .contractor-light, .contractor-dark, .logo-black, .logo-white").toggle();
       e.stopPropagation();
     });
 
