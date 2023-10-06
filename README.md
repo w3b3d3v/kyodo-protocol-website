@@ -1,6 +1,6 @@
 # Kyōdō Protocol Site
 
-Sustainable Business Model for Service Communities and DAOs.
+The Future of Work Powered by Communities - Kyōdō Protocol.
 
 ### Running SASS
 
